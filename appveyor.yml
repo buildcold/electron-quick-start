@@ -24,7 +24,7 @@ deploy:
   release: electron-start-kit-v$(appveyor_build_version)
   description: 'Release description'
   provider: GitHub
-  auth_token:dca87e6d9d1b4f742a51ae3034148f290cc177ec
+  auth_token:ab32f2871836963f7ae9294ba9f99ce45e5d2f8c
   artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
   draft: true
   prerelease: false
