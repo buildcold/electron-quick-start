@@ -24,7 +24,7 @@ deploy:
   release: electron-start-kit-v$(appveyor_build_version)
   description: 'Release description'
   provider: GitHub
-  auth_token: ab32f2871836963f7ae9294ba9f99ce45e5d2f8c
+  auth_token: 6d1fcb5dbe3386c62bdf026c6088f97506949f96
   draft: true
   prerelease: false
   on:
