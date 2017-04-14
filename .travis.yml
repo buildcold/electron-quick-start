@@ -18,3 +18,12 @@ install:
   - yarn add electron-builder@next --dev # force install next version to test electron-builder
 script:
   - yarn run dist
+  
+deploy:
+  provider: releases
+  api-key: eqU+9EQfDVZEHnsu/5/FAXLG616PBsTpsGEecKEIKptjNubdISf27ZSsYs4Gmwwe
+  file_glob: true
+  file: dist/linux-unpacked
+  skip_cleanup: true
+  on:
+    tags: true
