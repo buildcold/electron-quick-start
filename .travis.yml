@@ -15,6 +15,6 @@ node_js:
   
 install:
   - yarn install
-  - yarn add electron-builder
+  - yarn add electron-builder@next --dev # force install next version to test electron-builder
 script:
   - yarn run dist
