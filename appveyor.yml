@@ -20,3 +20,13 @@ build_script:
 
 test: off
 
+artifacts:
+- path: dist
+  name: electron-quick-start-v$(appveyor_build_version)
+  type: WebDeployPackage
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: eqU+9EQfDVZEHnsu/5/FAXLG616PBsTpsGEecKEIKptjNubdISf27ZSsYs4Gmwwe
+  artifact: electron-quick-start-v$(appveyor_build_version)
+  draft: true
